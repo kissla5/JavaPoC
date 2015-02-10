@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://poc/schema/test"
+            targetNamespace="http://poc/schema/test"
+            elementFormDefault="qualified">
+    <xsd:element name="root" >
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="text" minOccurs="0" maxOccurs="1" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

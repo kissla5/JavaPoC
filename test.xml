@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<test:root
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:test='http://poc/schema/test'
+    xsi:schemaLocation='http://poc/schema/test file:test.xsd'>
+    <test:text></test:text>
+
+</test:root>
