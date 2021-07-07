@@ -46,7 +46,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.quartz.CronExpression;
-import test.Root;
+//import test.Root;
 import poc.thread.*;
 
 /**
@@ -75,8 +75,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
-        testLabel();
-        
+        System.out.println("hello");
     }
     
     public static void testLabel() {
@@ -476,19 +475,19 @@ public class Main {
         System.out.println("Java version anywhere: " + System.getProperty("java.version"));
     }
 
-    public static void testJAXB() {
-        try {
-            JAXBContext jaxbContext = JAXBContext.newInstance("test");
-            Schema schema = SchemaFactory.newInstance(javax.xml.XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(new File("test.xsd"));
-            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            unmarshaller.setSchema(schema);
-            // System.out.println("" + unmarshaller.unmarshal(new File("test.xml")));
-            Root unmarshal = (Root) unmarshaller.unmarshal(new File("test.xml"));
-            System.out.println("test: " + unmarshal.getText());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
+//    public static void testJAXB() {
+//        try {
+//            JAXBContext jaxbContext = JAXBContext.newInstance("test");
+//            Schema schema = SchemaFactory.newInstance(javax.xml.XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(new File("test.xsd"));
+//            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+//            unmarshaller.setSchema(schema);
+//            // System.out.println("" + unmarshaller.unmarshal(new File("test.xml")));
+//            Root unmarshal = (Root) unmarshaller.unmarshal(new File("test.xml"));
+//            System.out.println("test: " + unmarshal.getText());
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 
     public static void testQuartz() throws ParseException {
         Date date = new Date();// new Date(113, 04, 27, 15, 0);
